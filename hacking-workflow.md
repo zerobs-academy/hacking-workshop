@@ -26,7 +26,7 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 ## Domain -> Subdomain -> Appliances and Software
 
 - dnsdumpster https://dnsdumpster.com/
-- certificate-db crt.sh
+- certificate-db https://crt.sh
 - passivedns https://securitytrails.com/
 
 
