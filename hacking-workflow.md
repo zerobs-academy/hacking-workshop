@@ -32,10 +32,10 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 
 ## RZ-AttackSurface
 
-- Shodan
-- Binaryedge 
-- Luup
-- cysmo
+- Shodan https://shodan.io
+- Binaryedge https://app.binaryedge.io/
+- Luup https://luup.zero.bs
+- cysmo https://cysmo.de
 
 
 ## Exploits 
