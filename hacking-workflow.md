@@ -30,7 +30,7 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - passivedns https://securitytrails.com/
 
 
-## RZ-AttackSurface
+## RZ-AttackSurface & internet wide scans
 
 - Shodan https://shodan.io
 - Binaryedge https://app.binaryedge.io/
@@ -38,6 +38,7 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - censys https://censys.io/ipv4
 - cysmo https://cysmo.de
 
+- rapid7 (formerly scans.io) https://opendata.rapid7.com/
 
 ## Exploits 
 
@@ -85,6 +86,23 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - bundestag.de.list
 
 
+
+#addix
+
+~~~
+
+if in_type == "b":
+  jq_cmd_raw = " | jq .target.ip"
+  jq_cmd_ports = """ | jq ' .target.ip + "|" + "\(.target.port)" + "|" + "\(.origin.ts)" + "|" + .result.data.request.url '"""
+elif in_type == "s":
+  jq_cmd_raw = " | jq .ip_str"
+  jq_cmd_ports = """ | jq ' .ip_str + "|" + "\(.port)" + "|" + .timestamp + "|" + .result.data.request.url ' """
+elif in_type == "p":
+  jq_cmd_raw = ""
+  jq_cmd_ports = ""
+
+
+~~~
 
 
 
