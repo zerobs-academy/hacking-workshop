@@ -59,6 +59,12 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - [dns takeover](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
 - [arp poisoning](https://en.wikipedia.org/wiki/ARP_spoofing)
 
+## Tools und Dojos
+
+- [OverTheWire](https://overthewire.org/wargames/)
+- [HackTheBox](https://www.hackthebox.eu/)
+- [CompassSecurity HackingLab](https://compass-security.com/de/produkte/hacking-lab)
+- [EU CyberSecurityChallenge](https://compass-security.com/de/news/detail/cyber-security-challenge-germany)
 
 # physical
 
@@ -68,6 +74,7 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - [entry gate and ladder ](https://www.youtube.com/watch?v=LQCEshM03IY)
 - [I'll Let Myself In: Tactics of Physical Pen Tester](https://www.youtube.com/watch?v=rnmcRTnTNC8)
 - [You’re Probably Not Red Teaming... And Usually I’m Not, Either](https://www.youtube.com/watch?v=mj2iSdBw4-0)
+
 
 
 # wifi
