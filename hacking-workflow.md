@@ -75,6 +75,11 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 - [I'll Let Myself In: Tactics of Physical Pen Tester](https://www.youtube.com/watch?v=rnmcRTnTNC8)
 - [You’re Probably Not Red Teaming... And Usually I’m Not, Either](https://www.youtube.com/watch?v=mj2iSdBw4-0)
 
+# filme & social engineering
+
+- [takedown](https://www.youtube.com/watch?v=md-3lzwqeek)
+
+- [the kgb the computer and me](https://www.youtube.com/watch?v=EcKxaq1FTac)
 
 
 # wifi
