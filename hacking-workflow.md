@@ -1,4 +1,16 @@
 
+# Ransomware-Leselinks
+
+
+
+- https://zero.bs/ransomware-vs-infrastruktur-de.html
+- https://zero.bs/ransomware-operations-part-1-intro.html part 1 - 4
+- https://www.zdnet.com/article/heres-a-list-of-all-the-ransomware-gangs-who-will-steal-and-leak-your-data-if-you-dont-pay/
+- https://www.intel471.com/blog/revil-ransomware-interview-russian-osint-100-million
+- https://therecord.media/i-scrounged-through-the-trash-heaps-now-im-a-millionaire-an-interview-with-revils-unknown/
+- https://cybernews.com/security/how-we-applied-to-work-with-ransomware-gang/
+
+
 
 
 # Recon + Weaponizing
