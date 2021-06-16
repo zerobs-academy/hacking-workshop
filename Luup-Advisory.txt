@@ -1,0 +1,15 @@
+
+
+CVE-2020-12345
+
+
+LUUP-Server Remote Code Execution Vulnerability 
+An issue was discovered in LUUP before 2.8. 
+LUUP-Interface has an unprotected Route, allowing
+an attacker to execute OS-Commands with crafted
+requests 
+
+Exploits had been seen in the wild. 
+
+CVS::  	9.8 / AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H

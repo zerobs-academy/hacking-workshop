@@ -111,22 +111,24 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 
 
 
-#addix
+# scans
 
 ~~~
 
-if in_type == "b":
-  jq_cmd_raw = " | jq .target.ip"
-  jq_cmd_ports = """ | jq ' .target.ip + "|" + "\(.target.port)" + "|" + "\(.origin.ts)" + "|" + .result.data.request.url '"""
-elif in_type == "s":
-  jq_cmd_raw = " | jq .ip_str"
-  jq_cmd_ports = """ | jq ' .ip_str + "|" + "\(.port)" + "|" + .timestamp + "|" + .result.data.request.url ' """
-elif in_type == "p":
-  jq_cmd_raw = ""
-  jq_cmd_ports = ""
+bigip 
+./nuclei_scan.py CVE-2021-22986 f5_bigip_rce-big_ip_all.list-2021-02-08.ips.ports
+
+vmware
+./nuclei_scan.py CVE-2021-21985 vmware_vcenter_rce-b71ad3c6-vcenter_all.gz-2021-05-31.ips.ports
+
+cisco 
+./nuclei_scan.py cve-2020-3452 cisco_asa_fileread_vulnscan-cisco_asa_latest.list-2021-02-08.ips.ports
+
+solr
+./nuclei_scan.py CVE-2021-27905 apache_solr-391e8612-solr.gz-2021-06-15.ips.ports
+
+weblogic
+./nuclei_scan.py CVE-2020-14882 weblogic_attack-oracle_weblogic.list-2021-02-12.ips.ports
 
 
 ~~~
-
-
-
