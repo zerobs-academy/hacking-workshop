@@ -13,3 +13,1232 @@ Exploits had been seen in the wild.
 
 CVS::  	9.8 / AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+
+
+---
+
+
+
+
+################################################################
+#
+# system_status 
+#
+################################################################
+
+
+
+--[ date ]------------------
+
+Wed 16 Jun 2021 09:48:17 AM UTC
+
+--[ hostname ]------------------
+
+smallsky
+
+--[ whoami ]------------------
+
+gregor
+
+--[ who ]------------------
+
+root     pts/0        2021-06-16 09:30 (89.27.255.58)
+gregor   pts/2        2021-06-15 13:34 (tmux(15028).%0)
+gregor   pts/3        2021-06-15 13:37 (tmux(15028).%1)
+gregor   pts/4        2021-06-16 09:37 (89.27.255.58)
+gregor   pts/5        2021-06-16 09:40 (167.71.47.247)
+
+--[ export ]------------------
+
+declare -x HOME="/home/gregor"
+declare -x LANG="en_US.UTF-8"
+declare -x LOGNAME="gregor"
+declare -x LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;3
+ 5:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"
+declare -x MAIL="/var/mail/gregor"
+declare -x OLDPWD="/home/gregor"
+declare -x PATH="/home/gregor/webapp/venv/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+declare -x PWD="/home/gregor/webapp"
+declare -x SHELL="/bin/sh"
+declare -x SHLVL="3"
+declare -x TERM="screen"
+declare -x TMUX="/tmp/tmux-1000/default,15028,0"
+declare -x TMUX_PANE="%0"
+declare -x USER="gregor"
+declare -x VIRTUAL_ENV="/home/gregor/webapp/venv"
+
+--[ crontab -l ]------------------
+
+
+--[ cat /etc/passwd ]------------------
+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+unscd:x:105:109::/var/lib/unscd:/usr/sbin/nologin
+ntp:x:106:112::/nonexistent:/usr/sbin/nologin
+sshd:x:107:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+gregor:x:1000:1000::/home/gregor:/bin/sh
+Debian-exim:x:108:114::/var/spool/exim4:/usr/sbin/nologin
+iodine:x:109:65534::/var/run/iodine:/usr/sbin/nologin
+postfix:x:110:116::/var/spool/postfix:/usr/sbin/nologin
+redis:x:111:118::/var/lib/redis:/usr/sbin/nologin
+
+--[ cat /etc/group ]------------------
+
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-timesync:x:102:
+systemd-network:x:103:
+systemd-resolve:x:104:
+messagebus:x:105:
+input:x:106:
+kvm:x:107:
+render:x:108:
+unscd:x:109:
+crontab:x:110:
+netdev:x:111:
+ntp:x:112:
+ssh:x:113:
+systemd-coredump:x:999:
+gregor:x:1000:
+Debian-exim:x:114:
+ssl-cert:x:115:
+postfix:x:116:
+postdrop:x:117:
+redis:x:118:
+
+--[ id ]------------------
+
+uid=1000(gregor) gid=1000(gregor) groups=1000(gregor)
+
+--[ pwd ]------------------
+
+/home/gregor/webapp
+
+--[ uptime ]------------------
+
+ 09:48:17 up 22:58,  5 users,  load average: 0.00, 0.00, 0.00
+
+--[ lsb_release -a ]------------------
+
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 10 (buster)
+Release:	10
+Codename:	buster
+
+--[ uname -a ]------------------
+
+Linux smallsky 4.19.0-16-cloud-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 GNU/Linux
+
+--[ cat /proc/version ]------------------
+
+Linux version 4.19.0-16-cloud-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Debian 4.19.181-1 (2021-03-19)
+
+
+################################################################
+#
+# login_status 
+#
+################################################################
+
+
+
+--[ lastlog ]------------------
+
+Username         Port     From             Latest
+root             pts/0    89.27.255.58     Wed Jun 16 09:30:11 +0000 2021
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+games                                      **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+mail                                       **Never logged in**
+news                                       **Never logged in**
+uucp                                       **Never logged in**
+proxy                                      **Never logged in**
+www-data                                   **Never logged in**
+backup                                     **Never logged in**
+list                                       **Never logged in**
+irc                                        **Never logged in**
+gnats                                      **Never logged in**
+nobody                                     **Never logged in**
+_apt                                       **Never logged in**
+systemd-timesync                           **Never logged in**
+systemd-network                            **Never logged in**
+systemd-resolve                            **Never logged in**
+messagebus                                 **Never logged in**
+unscd                                      **Never logged in**
+ntp                                        **Never logged in**
+sshd                                       **Never logged in**
+systemd-coredump                           **Never logged in**
+gregor           pts/5    167.71.47.247    Wed Jun 16 09:40:22 +0000 2021
+Debian-exim                                **Never logged in**
+iodine                                     **Never logged in**
+postfix                                    **Never logged in**
+redis                                      **Never logged in**
+
+--[ w ]------------------
+
+ 09:48:17 up 22:58,  5 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0    89.27.255.58     09:30   17:45   0.02s  0.02s -bash
+gregor   pts/2    tmux(15028).%0   Tue13   19:11m 10.66s  0.01s bash
+gregor   pts/3    tmux(15028).%1   Tue13   19:11m  0.05s  0.05s bash -l
+gregor   pts/4    89.27.255.58     09:37   40.00s  0.05s  0.05s bash -l
+gregor   pts/5    167.71.47.247    09:40    0.00s  0.04s  0.04s bash -l
+
+
+################################################################
+#
+# binaries
+#
+################################################################
+
+
+[ arp        ] : 
+[ ash        ] : 
+[ awk        ] : /usr/bin/awk
+[ bash       ] : /usr/bin/bash
+[ csh        ] : 
+[ curl       ] : /usr/bin/curl
+[ dash       ] : /usr/bin/dash
+[ ed         ] : 
+[ emacs      ] : 
+[ env        ] : /usr/bin/env
+[ expect     ] : 
+[ find       ] : /usr/bin/find
+[ ftp        ] : 
+[ gcc        ] : 
+[ gdb        ] : 
+[ git        ] : 
+[ ip         ] : /usr/bin/ip
+[ irb        ] : 
+[ less       ] : /usr/bin/less
+[ lua        ] : 
+[ make       ] : 
+[ man        ] : /usr/bin/man
+[ more       ] : /usr/bin/more
+[ mtr        ] : 
+[ nc         ] : 
+[ netcat     ] : 
+[ nmap       ] : /usr/bin/nmap
+[ node       ] : 
+[ perl       ] : /usr/bin/perl
+[ php        ] : 
+[ pico       ] : /usr/bin/pico
+[ python     ] : /home/gregor/webapp/venv/bin/python
+[ rpm        ] : 
+[ rpmquery   ] : 
+[ ruby       ] : 
+[ rvim       ] : /usr/bin/rvim
+[ scp        ] : /usr/bin/scp
+[ script     ] : /usr/bin/script
+[ sftp       ] : /usr/bin/sftp
+[ sh         ] : /usr/bin/sh
+[ socat      ] : 
+[ ssh        ] : /usr/bin/ssh
+[ strace     ] : 
+[ tar        ] : /usr/bin/tar
+[ taskset    ] : /usr/bin/taskset
+[ tclsh      ] : 
+[ telnet     ] : 
+[ tftp       ] : 
+[ vi         ] : /usr/bin/vi
+[ vim        ] : /usr/bin/vim
+[ vnstat     ] : 
+[ wget       ] : /usr/bin/wget
+[ wish       ] : 
+[ zip        ] : 
+[ zsh        ] : 
+
+
+################################################################
+#
+# network_status 
+#
+################################################################
+
+
+
+--[ /sbin/ifconfig ]------------------
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 206.189.18.51  netmask 255.255.240.0  broadcast 206.189.31.255
+        inet6 fe80::c490:f5ff:fe29:77f6  prefixlen 64  scopeid 0x20<link>
+        ether c6:90:f5:29:77:f6  txqueuelen 1000  (Ethernet)
+        RX packets 69364  bytes 77050146 (73.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 54907  bytes 14765144 (14.0 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0:1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.16.0.5  netmask 255.255.0.0  broadcast 10.16.255.255
+        ether c6:90:f5:29:77:f6  txqueuelen 1000  (Ethernet)
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.131.0.2  netmask 255.255.0.0  broadcast 10.131.255.255
+        inet6 fe80::641f:e5ff:feaf:f650  prefixlen 64  scopeid 0x20<link>
+        ether 66:1f:e5:af:f6:50  txqueuelen 1000  (Ethernet)
+        RX packets 36  bytes 2596 (2.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 36  bytes 2616 (2.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 11110  bytes 776765 (758.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11110  bytes 776765 (758.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+--[ /sbin/ip a ]------------------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether c6:90:f5:29:77:f6 brd ff:ff:ff:ff:ff:ff
+    inet 206.189.18.51/20 brd 206.189.31.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet 10.16.0.5/16 brd 10.16.255.255 scope global eth0:1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::c490:f5ff:fe29:77f6/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 66:1f:e5:af:f6:50 brd ff:ff:ff:ff:ff:ff
+    inet 10.131.0.2/16 brd 10.131.255.255 scope global eth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::641f:e5ff:feaf:f650/64 scope link 
+       valid_lft forever preferred_lft forever
+
+--[ route -n ]------------------
+
+
+--[ /sbin/ip r ]------------------
+
+default via 206.189.16.1 dev eth0 onlink 
+10.16.0.0/16 dev eth0 proto kernel scope link src 10.16.0.5 
+10.131.0.0/16 dev eth1 proto kernel scope link src 10.131.0.2 
+206.189.16.0/20 dev eth0 proto kernel scope link src 206.189.18.51 
+
+--[ arp -a ]------------------
+
+
+--[ /sbin/ip n ]------------------
+
+206.189.16.1 dev eth0 lladdr fe:00:00:00:01:01 REACHABLE
+206.189.28.102 dev eth0 lladdr fe:00:00:00:01:01 STALE
+
+--[ netstat -pltn ]------------------
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:5225            0.0.0.0:*               LISTEN      17625/python3       
+tcp        0      0 127.0.0.1:6379          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 ::1:6379                :::*                    LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+tcp6       0      0 :::25                   :::*                    LISTEN      -                   
+
+--[ cat /etc/resolv.conf ]------------------
+
+# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
+#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN
+nameserver 67.207.67.2
+nameserver 67.207.67.3
+
+
+--[ lsof  grep UDP ]------------------
+
+python3   17625                     gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625                     gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625                     gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625                     gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625                     gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625                     gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625                     gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625                     gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625                     gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625                     gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625                     gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625                     gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625                     gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625                     gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625                     gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625                     gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625                     gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625                     gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625                     gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625                     gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625                     gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625                     gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18894 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18894 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18894 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18894 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18894 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18919 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18919 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18919 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18919 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18919 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18922 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18922 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18922 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18922 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18922 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18929 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18929 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18929 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18929 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18929 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18941 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18941 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18941 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18941 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18941 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18957 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18957 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18957 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18957 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18957 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18963 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18963 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18963 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18963 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18963 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18995 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18995 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18995 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18995 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18995 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 18998 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 18998 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 18998 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 18998 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 18998 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19171 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19171 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19171 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19171 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19171 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19190 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19190 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19190 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19190 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19190 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19260 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19260 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19260 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19260 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19260 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19296 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19296 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19296 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19296 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19296 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19357 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19357 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19357 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19357 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19357 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19657 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19657 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19657 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19657 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19657 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19678 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19678 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19678 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19678 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19678 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19704 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19704 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19704 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19704 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19704 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 19906 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 19906 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 19906 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 19906 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 19906 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+python3   17625 20154 python3       gregor    3u     IPv4              85780      0t0        TCP *:5225 (LISTEN)
+python3   17625 20154 python3       gregor    4u     IPv4             106338      0t0        TCP 206.189.18.51:5225->167.172.99.115:51724 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor    5u     IPv4              85787      0t0        TCP localhost:53486->localhost:6379 (ESTABLISHED)
+python3   17625 20154 python3       gregor    7u     IPv4             106433      0t0        TCP 206.189.18.51:5225->167.71.47.247:44864 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor    8u     IPv4              85796      0t0        TCP localhost:53488->localhost:6379 (ESTABLISHED)
+python3   17625 20154 python3       gregor   10u     IPv4             106460      0t0        TCP 206.189.18.51:5225->167.172.107.132:51040 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   12u     IPv4             106493      0t0        TCP 206.189.18.51:5225->167.71.47.247:45060 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   14u     IPv4             106559      0t0        TCP 206.189.18.51:5225->167.71.47.247:45232 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   16u     IPv4             106681      0t0        TCP 206.189.18.51:5225->167.172.107.132:52116 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   17u     IPv4             106751      0t0        TCP 206.189.18.51:5225->167.172.99.115:51754 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   18u     IPv4             106968      0t0        TCP 206.189.18.51:5225->167.172.107.132:53146 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   20u     IPv4             106999      0t0        TCP 206.189.18.51:5225->167.172.99.115:51766 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   22u     IPv4             108011      0t0        TCP 206.189.18.51:5225->167.172.107.132:57684 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   24u     IPv4             108158      0t0        TCP 206.189.18.51:5225->167.172.99.115:51820 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   26u     IPv4             108703      0t0        TCP 206.189.18.51:5225->167.172.99.115:51838 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   28u     IPv4             108943      0t0        TCP 206.189.18.51:5225->167.71.47.247:53570 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   30u     IPv4             109436      0t0        TCP 206.189.18.51:5225->167.172.107.132:33746 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   32u     IPv4             111711      0t0        TCP 206.189.18.51:5225->167.172.99.115:51898 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   34u     IPv4             111902      0t0        TCP 206.189.18.51:5225->167.172.107.132:38536 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   36u     IPv4             112091      0t0        TCP 206.189.18.51:5225->167.71.47.247:32970 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   38u     IPv4             118159      0t0        TCP 206.189.18.51:5225->165.22.76.11:35326 (CLOSE_WAIT)
+python3   17625 20154 python3       gregor   40u     IPv4             121818      0t0        TCP 206.189.18.51:5225->104.248.142.146:34864 (ESTABLISHED)
+
+
+
+--[ lsof | grep UDP ]------------------
+
+
+
+
+
+
+################################################################
+#
+# filesystem_status 
+#
+################################################################
+
+
+
+--[ df -h ]------------------
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            487M     0  487M   0% /dev
+tmpfs            99M  6.6M   93M   7% /run
+/dev/vda1        25G  1.3G   23G   6% /
+tmpfs           495M     0  495M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           495M     0  495M   0% /sys/fs/cgroup
+tmpfs            99M     0   99M   0% /run/user/0
+tmpfs            99M     0   99M   0% /run/user/1000
+
+--[ mount ]------------------
+
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=498260k,nr_inodes=124565,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=101368k,mode=755)
+/dev/vda1 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=27,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=8906)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=101364k,mode=700)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=101364k,mode=700,uid=1000,gid=1000)
+
+--[ ps -ef ]------------------
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Jun15 ?        00:00:02 /sbin/init nosplash text
+root         2     0  0 Jun15 ?        00:00:00 [kthreadd]
+root         3     2  0 Jun15 ?        00:00:00 [rcu_gp]
+root         4     2  0 Jun15 ?        00:00:00 [rcu_par_gp]
+root         6     2  0 Jun15 ?        00:00:00 [kworker/0:0H-kblockd]
+root         8     2  0 Jun15 ?        00:00:00 [mm_percpu_wq]
+root         9     2  0 Jun15 ?        00:00:00 [ksoftirqd/0]
+root        10     2  0 Jun15 ?        00:00:17 [rcu_sched]
+root        11     2  0 Jun15 ?        00:00:00 [rcu_bh]
+root        12     2  0 Jun15 ?        00:00:00 [migration/0]
+root        14     2  0 Jun15 ?        00:00:00 [cpuhp/0]
+root        15     2  0 Jun15 ?        00:00:00 [kdevtmpfs]
+root        16     2  0 Jun15 ?        00:00:00 [netns]
+root        17     2  0 Jun15 ?        00:00:00 [kauditd]
+root        18     2  0 Jun15 ?        00:00:00 [khungtaskd]
+root        19     2  0 Jun15 ?        00:00:00 [oom_reaper]
+root        20     2  0 Jun15 ?        00:00:00 [writeback]
+root        21     2  0 Jun15 ?        00:00:00 [kcompactd0]
+root        22     2  0 Jun15 ?        00:00:00 [ksmd]
+root        23     2  0 Jun15 ?        00:00:00 [khugepaged]
+root        24     2  0 Jun15 ?        00:00:00 [crypto]
+root        25     2  0 Jun15 ?        00:00:00 [kintegrityd]
+root        26     2  0 Jun15 ?        00:00:00 [kblockd]
+root        27     2  0 Jun15 ?        00:00:00 [watchdogd]
+root        28     2  0 Jun15 ?        00:00:00 [kswapd0]
+root        44     2  0 Jun15 ?        00:00:00 [kthrotld]
+root        45     2  0 Jun15 ?        00:00:00 [ipv6_addrconf]
+root        55     2  0 Jun15 ?        00:00:00 [kstrp]
+root        99     2  0 Jun15 ?        00:00:00 [ata_sff]
+root       101     2  0 Jun15 ?        00:00:00 [scsi_eh_0]
+root       103     2  0 Jun15 ?        00:00:00 [scsi_tmf_0]
+root       105     2  0 Jun15 ?        00:00:00 [scsi_eh_1]
+root       106     2  0 Jun15 ?        00:00:00 [kworker/u2:2-events_unbound]
+root       107     2  0 Jun15 ?        00:00:00 [scsi_tmf_1]
+root       109     2  0 Jun15 ?        00:00:00 [scsi_eh_2]
+root       110     2  0 Jun15 ?        00:00:00 [scsi_tmf_2]
+root       163     2  0 Jun15 ?        00:00:00 [kworker/u3:0]
+root       165     2  0 Jun15 ?        00:00:00 [jbd2/vda1-8]
+root       166     2  0 Jun15 ?        00:00:00 [ext4-rsv-conver]
+root       212     1  0 Jun15 ?        00:00:00 /lib/systemd/systemd-journald
+root       213     2  0 Jun15 ?        00:00:00 [kworker/0:1H-kblockd]
+message+   463     1  0 Jun15 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+unscd      465     1  0 Jun15 ?        00:00:00 /usr/sbin/nscd -d
+root       468     1  0 Jun15 ?        00:00:00 /usr/sbin/cron -f
+root       473     1  0 Jun15 ?        00:00:00 /lib/systemd/systemd-logind
+ntp        480     1  0 Jun15 ?        00:00:04 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 106:112
+root       489     1  0 Jun15 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root       490     1  0 Jun15 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       508     1  0 Jun15 ?        00:00:00 /usr/sbin/sshd -D
+root       538     1  0 Jun15 ?        00:00:00 /lib/systemd/systemd-udevd
+root       718     1  0 Jun15 ?        00:00:00 /lib/systemd/systemd --user
+root       719   718  0 Jun15 ?        00:00:00 (sd-pam)
+root       986     2  0 Jun15 ?        00:00:00 [kworker/u2:0-events_unbound]
+root     14518     1  0 Jun15 ?        00:00:00 /usr/lib/postfix/sbin/master -w
+root     14932     1  0 Jun15 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+postfix  14969 14518  0 Jun15 ?        00:00:00 qmgr -l -t unix -u
+root     14989     1  0 Jun15 ?        00:00:00 tail -f /var/log/mail.info
+gregor   15028     1  0 Jun15 ?        00:00:00 tmux
+gregor   15029 15028  0 Jun15 pts/2    00:00:00 -sh
+gregor   15033 15029  0 Jun15 pts/2    00:00:00 bash -l
+redis    15407     1  0 Jun15 ?        00:01:48 /usr/bin/redis-server 127.0.0.1:6379
+gregor   15552 15028  0 Jun15 pts/3    00:00:00 -sh
+gregor   15556 15552  0 Jun15 pts/3    00:00:00 bash -l
+root     16805     2  0 Jun15 ?        00:00:00 [kworker/0:0-events]
+gregor   17625 15033  0 Jun15 pts/2    00:00:10 python3 ./server.py run
+postfix  17919 14518  0 Jun15 ?        00:00:00 tlsmgr -l -t unix -u -c
+root     18705     2  0 08:58 ?        00:00:00 [kworker/0:1]
+postfix  18708 14518  0 08:59 ?        00:00:00 pickup -l -t unix -u -c
+gregor   18895 17625  0 09:24 pts/2    00:00:00 /bin/sh -c su -
+root     18896 18895  0 09:24 pts/2    00:00:00 su
+gregor   18920 17625  0 09:24 pts/2    00:00:00 /bin/sh -c su
+root     18921 18920  0 09:24 pts/2    00:00:00 su
+gregor   18923 17625  0 09:25 pts/2    00:00:00 /bin/sh -c su -
+root     18924 18923  0 09:25 pts/2    00:00:00 su
+gregor   18930 17625  0 09:25 pts/2    00:00:00 /bin/sh -c su -i
+root     18931 18930  0 09:25 pts/2    00:00:00 su
+gregor   18942 17625  0 09:25 pts/2    00:00:00 /bin/sh -c su -
+root     18943 18942  0 09:25 pts/2    00:00:00 su
+gregor   18961 17625  0 09:25 pts/2    00:00:00 sh -c sudo ls -al
+root     18962 18961  0 09:25 pts/2    00:00:00 sudo ls -al
+gregor   18966 17625  0 09:25 pts/2    00:00:00 sh -c sudo ls
+root     18967 18966  0 09:25 pts/2    00:00:00 sudo ls
+gregor   18996 17625  0 09:25 pts/2    00:00:00 /bin/sh -c crontab -l
+gregor   18997 18996  0 09:25 pts/2    00:00:00 crontab
+gregor   18999 17625  0 09:25 pts/2    00:00:00 /bin/sh -c cat /etc/passwd
+gregor   19000 18999  0 09:25 pts/2    00:00:00 cat
+gregor   19172 17625  0 09:27 pts/2    00:00:00 /bin/sh -c crontab -l
+gregor   19173 19172  0 09:27 pts/2    00:00:00 crontab
+gregor   19191 17625  0 09:28 pts/2    00:00:00 /bin/sh -c vi config.cfg
+gregor   19192 19191  0 09:28 pts/2    00:00:00 vi
+gregor   19261 17625  0 09:28 pts/2    00:00:00 /bin/sh -c nano
+gregor   19262 19261  0 09:28 pts/2    00:00:00 nano
+gregor   19297 17625  0 09:28 pts/2    00:00:00 /bin/sh -c cat install.sh
+gregor   19298 19297  0 09:28 pts/2    00:00:00 cat
+gregor   19358 17625  0 09:29 pts/2    00:00:00 /bin/sh -c cat todo.md
+gregor   19359 19358  0 09:29 pts/2    00:00:00 cat
+root     19447   508  0 09:30 ?        00:00:00 sshd: root@pts/0
+root     19454 19447  0 09:30 pts/0    00:00:00 -bash
+gregor   19658 17625  0 09:31 pts/2    00:00:00 /bin/sh -c su root
+root     19659 19658  0 09:31 pts/2    00:00:00 su
+gregor   19679 17625  0 09:31 pts/2    00:00:00 /bin/sh -c cat etc/redhat-release
+gregor   19680 19679  0 09:31 pts/2    00:00:00 cat
+gregor   19705 17625  0 09:31 pts/2    00:00:00 /bin/sh -c cat hello
+gregor   19706 19705  0 09:31 pts/2    00:00:00 cat
+root     19851   508  0 09:37 ?        00:00:00 sshd: gregor [priv]
+gregor   19854     1  0 09:37 ?        00:00:00 /lib/systemd/systemd --user
+gregor   19855 19854  0 09:37 ?        00:00:00 (sd-pam)
+gregor   19868 19851  0 09:37 ?        00:00:00 sshd: gregor@pts/4
+gregor   19869 19868  0 09:37 pts/4    00:00:00 -sh
+gregor   19872 19869  0 09:37 pts/4    00:00:00 bash -l
+root     19891   508  0 09:40 ?        00:00:00 sshd: gregor [priv]
+gregor   19898 19891  0 09:40 ?        00:00:00 sshd: gregor@pts/5
+gregor   19899 19898  0 09:40 pts/5    00:00:00 -sh
+gregor   19902 19899  0 09:40 pts/5    00:00:00 bash -l
+gregor   19907 17625  0 09:40 pts/2    00:00:00 /bin/sh -c bash -l
+gregor   19908 19907  0 09:40 pts/2    00:00:00 bash
+postfix  20149 14518  0 09:47 ?        00:00:00 cleanup -z -t unix -u -c
+postfix  20150 14518  0 09:47 ?        00:00:00 trivial-rewrite -n rewrite -t unix -u -c
+postfix  20151 14518  0 09:47 ?        00:00:00 smtp -t unix -u -c
+gregor   20248 17625  0 09:48 pts/2    00:00:00 sh -c /tmp/sysctl | mail -s 'sysinfo' mm@zero.bs 2>/dev/null
+gregor   20249 20248  0 09:48 pts/2    00:00:00 /bin/bash /tmp/sysctl
+gregor   20250 20248  0 09:48 pts/2    00:00:00 mail -s sysinfo mm@zero.bs
+gregor   20338 20249  0 09:48 pts/2    00:00:00 ps -ef
+
+--[ ls -lrth /tmp ]------------------
+
+total 20K
+drwx------ 3 root   root   4.0K Jun 15 10:49 systemd-private-734c1b80ef6441d496a5177845760616-ntp.service-fShSDg
+drwx------ 2 gregor gregor 4.0K Jun 15 13:34 tmux-1000
+drwx------ 3 root   root   4.0K Jun 15 13:36 systemd-private-734c1b80ef6441d496a5177845760616-redis-server.service-zBasO3
+-rwxr-xr-x 1 gregor gregor 2.6K Jun 16 09:46 sysctl
+-rw-r--r-- 1 gregor gregor 2.6K Jun 16 09:46 sysctl_c
+
+--[ ls -lrth /etc ]------------------
+
+total 688K
+-rw-r--r-- 1 root root      9 Aug  7  2006 host.conf
+-rw-r--r-- 1 root root    767 Mar  4  2016 profile
+-rw-r--r-- 1 root root   3.6K Jun 20  2016 screenrc
+-rw-r--r-- 1 root root    604 Jun 26  2016 deluser.conf
+-rw-r--r-- 1 root root     34 Mar  2  2018 ld.so.conf
+-rw-r--r-- 1 root root    367 Mar  2  2018 bindresvport.blacklist
+-rw-r--r-- 1 root root   1.8K May  5  2018 inputrc
+-rw-r--r-- 1 root root   2.3K May 31  2018 sysctl.conf
+-rw-r--r-- 1 root root   4.1K Jul 27  2018 securetty
+-rw-r--r-- 1 root root    11K Jul 27  2018 login.defs
+-rw-r--r-- 1 root root   2.6K Aug  1  2018 gai.conf
+-rw-r--r-- 1 root root    435 Aug 22  2018 logrotate.conf
+-rw-r--r-- 1 root root   2.2K Dec  2  2018 nscd.conf
+-rw-r--r-- 1 root root   1.3K Dec 14  2018 ucf.conf
+-rw-r--r-- 1 root root    24K Feb  9  2019 mime.types
+-rw-r--r-- 1 root root    449 Feb  9  2019 mailcap.order
+-rw-r--r-- 1 root root    19K Feb 10  2019 services
+-rw-r--r-- 1 root root    887 Feb 10  2019 rpc
+-rw-r--r-- 1 root root   2.9K Feb 10  2019 protocols
+-rw-r--r-- 1 root root   5.1K Feb 10  2019 manpath.config
+-rw-r--r-- 1 root root    494 Feb 10  2019 nsswitch.conf
+-rw-r--r-- 1 root root     45 Feb 11  2019 bash_completion
+-rw-r--r-- 1 root root    552 Feb 14  2019 pam.conf
+-rw-r--r-- 1 root root   2.9K Feb 26  2019 debconf.conf
+-rw-r--r-- 1 root root   2.0K Feb 26  2019 rsyslog.conf
+-rw-r--r-- 1 root root    642 Mar  1  2019 xattr.conf
+-rw-r--r-- 1 root root   2.2K Mar 21  2019 ntp.conf
+-rw-r--r-- 1 root root   4.9K Apr  5  2019 wgetrc
+-rw-r--r-- 1 root root   2.0K Apr 18  2019 bash.bashrc
+lrwxrwxrwx 1 root root     13 Apr 23  2019 rmt -> /usr/sbin/rmt
+-rw-r--r-- 1 root root    191 Apr 25  2019 libaudit.conf
+-rw-r--r-- 1 root root   3.0K May  1  2019 locale.alias
+-rw-r--r-- 1 root root   9.1K Jun 12  2019 nanorc
+-rw-r--r-- 1 root root   1.1K Oct 11  2019 crontab
+-rw-r--r-- 1 root root    812 Jan 10  2020 mke2fs.conf
+-r--r----- 1 root root    669 Jan 20 12:26 sudoers
+-rw-r--r-- 1 root root    111 Jan 25 21:40 magic.mime
+-rw-r--r-- 1 root root    111 Jan 25 21:40 magic
+drwxr-xr-x 2 root root   4.0K Mar 18 19:59 binfmt.d
+lrwxrwxrwx 1 root root     21 Mar 19 23:44 os-release -> ../usr/lib/os-release
+-rw-r--r-- 1 root root    286 Mar 19 23:44 motd
+-rw-r--r-- 1 root root     20 Mar 19 23:44 issue.net
+-rw-r--r-- 1 root root     27 Mar 19 23:44 issue
+-rw-r--r-- 1 root root      5 Mar 19 23:44 debian_version
+-rw-r--r-- 1 root root    312 May  1 09:42 email-addresses
+drwxr-xr-x 7 root root   4.0K May 23 17:51 apt
+drwxr-xr-x 2 root root   4.0K May 23 17:51 opt
+drwxr-xr-x 2 root root   4.0K May 23 17:51 selinux
+drwxr-xr-x 2 root root   4.0K May 23 17:51 terminfo
+drwxr-xr-x 2 root root   4.0K May 23 17:51 update-motd.d
+drwxr-xr-x 2 root root   4.0K May 23 17:51 ld.so.conf.d
+drwxr-xr-x 4 root root   4.0K May 23 17:51 dpkg
+-rw-r--r-- 1 root root      8 May 23 17:51 timezone
+lrwxrwxrwx 1 root root     27 May 23 17:51 localtime -> /usr/share/zoneinfo/Etc/UTC
+-rw-r--r-- 1 root root      0 May 23 17:51 subuid-
+-rw-r--r-- 1 root root      0 May 23 17:51 subgid-
+drwxr-xr-x 4 root root   4.0K May 23 17:51 security
+-rw-r--r-- 1 root root      0 May 23 17:51 environment
+-rw-r--r-- 1 root root   3.0K May 23 17:51 adduser.conf
+drwxr-xr-x 3 root root   4.0K May 23 17:52 xdg
+drwxr-xr-x 2 root root   4.0K May 23 17:52 modules-load.d
+drwxr-xr-x 2 root root   4.0K May 23 17:52 python3.7
+drwxr-xr-x 2 root root   4.0K May 23 17:52 python2.7
+drwxr-xr-x 3 root root   4.0K May 23 17:52 ca-certificates
+drwxr-xr-x 3 root root   4.0K May 23 17:52 NetworkManager
+drwxr-xr-x 4 root root   4.0K May 23 17:52 dbus-1
+drwxr-xr-x 5 root root   4.0K May 23 17:52 kernel
+drwxr-xr-x 3 root root   4.0K May 23 17:53 gss
+drwxr-xr-x 3 root root   4.0K May 23 17:53 ufw
+drwxr-xr-x 4 root root   4.0K May 23 17:53 ppp
+drwxr-xr-x 3 root root   4.0K May 23 17:53 logcheck
+-rw-r--r-- 1 root root    195 May 23 17:53 modules
+-rw-r--r-- 1 root root   9.2K May 23 17:53 locale.gen
+-rw-r--r-- 1 root root    711 May 23 17:53 hosts.deny
+-rw-r--r-- 1 root root    411 May 23 17:53 hosts.allow
+drwxr-xr-x 4 root root   4.0K May 23 17:53 udev
+drwxr-xr-x 2 root root   4.0K May 23 17:53 sysctl.d
+-rw-r--r-- 1 root root     60 May 23 17:53 networks
+drwxr-xr-x 2 root root   4.0K May 23 17:53 joe
+drwxr-xr-x 4 root root   4.0K May 23 17:53 iproute2
+drwxr-xr-x 2 root root   4.0K May 23 17:53 cron.d
+drwxr-xr-x 2 root root   4.0K May 23 17:53 cron.hourly
+drwxr-xr-x 2 root root   4.0K May 23 17:53 cron.monthly
+drwxr-xr-x 4 root root   4.0K May 23 17:53 dhcp
+drwxr-xr-x 2 root root   4.0K May 23 17:53 tmpfiles.d
+drwxr-xr-x 2 root root   4.0K May 23 17:53 vim
+-rw-r--r-- 1 root root   5.9K May 23 17:53 ca-certificates.conf
+drwxr-xr-x 2 root root   4.0K May 23 17:53 calendar
+drwxr-xr-x 2 root root   4.0K May 23 17:53 python3
+drwxr-xr-x 2 root root   4.0K May 23 17:53 init
+lrwxrwxrwx 1 root root     31 May 23 17:53 resolv.conf -> /etc/resolvconf/run/resolv.conf
+drwxr-xr-x 2 root root   4.0K May 23 17:53 grub.d
+drwxr-xr-x 2 root root   4.0K May 23 17:53 python
+drwxr-xr-x 2 root root   4.0K May 23 17:53 profile.d
+drwxr-xr-x 4 root root   4.0K May 23 17:53 euca2ools
+-rw-r--r-- 1 root root    118 May 23 17:53 fstab
+drwxr-xr-x 2 root root   4.0K May 23 17:53 modprobe.d
+drwxr-xr-x 2 root root   4.0K May 23 17:53 pam.d
+drwxr-xr-x 4 root root   4.0K May 23 17:54 ssl
+drwxr-xr-x 3 root root   4.0K May 23 17:54 apparmor
+drwxr-xr-x 2 root root   4.0K May 23 17:54 rcS.d
+drwxr-xr-x 5 root root   4.0K May 23 17:54 initramfs-tools
+drwxr-xr-x 7 root root   4.0K Jun 11 16:07 network
+drwxr-xr-x 3 root root   4.0K Jun 11 16:10 X11
+drwxr-xr-x 2 root root   4.0K Jun 11 16:10 ldap
+drwxr-xr-x 2 root root   4.0K Jun 11 16:10 skel
+drwxr-xr-x 4 root root   4.0K Jun 11 16:10 cloud
+-r--r--r-- 1 root root     33 Jun 15 10:49 machine-id
+lrwxrwxrwx 1 root root     19 Jun 15 10:49 mtab -> ../proc/self/mounts
+-rw-r--r-- 1 root root      9 Jun 15 10:49 hostname
+-rw-r--r-- 1 root root    599 Jun 15 10:49 hosts
+drwxr-x--- 2 root root   4.0K Jun 15 10:49 sudoers.d
+drwxr-xr-x 6 root root   4.0K Jun 15 10:49 systemd
+drwxr-xr-x 2 root root   4.0K Jun 15 10:55 ssh
+-rw-r--r-- 1 root root     20 Jun 15 10:55 subuid
+-rw-r--r-- 1 root root     20 Jun 15 10:55 subgid
+drwxr-xr-x 4 root root   4.0K Jun 15 10:58 perl
+drwxr-xr-x 2 root root   4.0K Jun 15 10:58 mc
+-rw-r--r-- 1 root root    146 Jun 15 10:59 shells
+drwxr-xr-x 2 root root   4.0K Jun 15 12:58 groff
+drwxr-xr-x 7 root root   4.0K Jun 15 12:58 apparmor.d
+drwxr-xr-x 2 root root   4.0K Jun 15 12:58 cron.weekly
+-rw-r--r-- 1 root root   5.6K Jun 15 12:58 mailcap
+drwxr-xr-x 4 root root   4.0K Jun 15 13:04 mysql
+-rw-r--r-- 1 root root    185 Jun 15 13:04 aliases
+-rw-r--r-- 1 root root      9 Jun 15 13:04 mailname
+drwxr-xr-x 3 root root   4.0K Jun 15 13:04 exim4
+drwxr-xr-x 2 root root   4.0K Jun 15 13:04 cron.daily
+drwxr-xr-x 2 root root   4.0K Jun 15 13:04 alternatives
+drwxr-xr-x 5 root root   4.0K Jun 15 13:12 resolvconf
+-rw-r----- 1 root shadow  635 Jun 15 13:12 gshadow-
+-rw-r--r-- 1 root root    764 Jun 15 13:12 group-
+drwxr-xr-x 2 root root   4.0K Jun 15 13:12 insserv.conf.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:12 rsyslog.d
+-rw-r--r-- 1 root root    12K Jun 15 13:12 aliases.db
+drwxr-xr-x 5 root root   4.0K Jun 15 13:12 postfix
+-rw-r----- 1 root shadow 1005 Jun 15 13:36 shadow-
+-rw-r--r-- 1 root root   1.7K Jun 15 13:36 passwd-
+-rw-r--r-- 1 root root    777 Jun 15 13:36 group
+-rw-r----- 1 root shadow  645 Jun 15 13:36 gshadow
+-rw-r--r-- 1 root root   1.7K Jun 15 13:36 passwd
+-rw-r----- 1 root shadow 1005 Jun 15 13:36 shadow
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 redis
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 logrotate.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 init.d
+drwxr-xr-x 3 root root   4.0K Jun 15 13:36 default
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc6.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc5.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc4.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc3.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc2.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc1.d
+drwxr-xr-x 2 root root   4.0K Jun 15 13:36 rc0.d
+-rw-r--r-- 1 root root    19K Jun 15 13:36 ld.so.cache
+
+--[ ls -lrth /var/log ]------------------
+
+total 728K
+drwxr-xr-x 2 ntp         ntp  4.0K Mar 21  2019 ntpstats
+drwx------ 2 root        root 4.0K Jun 15 10:49 private
+-rw-r----- 1 root        adm   967 Jun 15 10:49 user.log
+-rw-r----- 1 root        adm  5.5K Jun 15 10:49 cloud-init-output.log
+-rw-r--r-- 1 root        adm  115K Jun 15 10:49 cloud-init.log
+-rw-r----- 1 root        adm  7.1K Jun 15 10:49 debug
+-rw-r----- 1 root        adm   38K Jun 15 12:58 kern.log
+drwxr-s--- 2 Debian-exim adm  4.0K Jun 15 13:04 exim4
+-rw-r--r-- 1 root        root 3.7K Jun 15 13:04 alternatives.log
+-rw-r----- 1 root        adm   33K Jun 15 13:12 messages
+drwxr-xr-x 2 root        root 4.0K Jun 15 13:36 apt
+drwxr-s--- 2 redis       adm  4.0K Jun 15 13:36 redis
+-rw-r--r-- 1 root        root  48K Jun 15 13:36 dpkg.log
+-rw-rw---- 1 root        utmp  64K Jun 16 09:29 btmp
+-rw-r----- 1 root        adm   566 Jun 16 09:34 mail.warn
+-rw-r----- 1 root        adm   63K Jun 16 09:40 daemon.log
+-rw-r----- 1 root        adm   97K Jun 16 09:40 auth.log
+-rw-rw-r-- 1 root        utmp  11K Jun 16 09:40 wtmp
+-rw-rw-r-- 1 root        utmp 286K Jun 16 09:40 lastlog
+-rw-r----- 1 root        adm   18K Jun 16 09:47 mail.log
+-rw-r----- 1 root        adm   18K Jun 16 09:47 mail.info
+-rw-r----- 1 root        adm  123K Jun 16 09:48 syslog
+
