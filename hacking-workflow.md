@@ -90,8 +90,8 @@ spiegel.de mail is handled by 0 spiegel-de.mail.protection.outlook.com.
 # filme & social engineering
 
 - [takedown](https://www.youtube.com/watch?v=md-3lzwqeek)
-
 - [the kgb the computer and me](https://www.youtube.com/watch?v=EcKxaq1FTac)
+- [APT-Operations by gruq](https://www.youtube.com/watch?v=wP2J9aYM6Oo)
 
 
 # wifi
